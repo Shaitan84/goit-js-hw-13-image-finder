@@ -1,6 +1,6 @@
-import apiService from './apiService.js'
+import apiService from './api-service.js'
 import refs from './refs.js'
-import tmp from './templating.js'
+import render from './render-gallery.js'
 
 let searchQuery = "";
 let page = 1;
@@ -21,7 +21,7 @@ refs.searchForm.addEventListener('submit', (event) => {
 			if (pics.length < 12) {
 				refs.loadMore.style.visibility = "hidden"
 			};
-			tmp.updateGallery(pics);
+			render.updateGallery(pics);
 			page += 1
 		});
 });
@@ -33,11 +33,7 @@ refs.loadMore.addEventListener('click', (event) => {
 			if (pics.length < 12) {
 				refs.loadMore.style.visibility = "hidden"
 			};
-			tmp.loadMorePics(pics);
+			render.loadMorePics(pics);
 			page += 1
 		});
-	window.scrollTo({
-		top: document.body.scrollHeight,
-		behavior: "smooth"
-	});
 });

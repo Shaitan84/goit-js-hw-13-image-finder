@@ -1,4 +1,4 @@
-import galleryTemp from '../templates/galleryTemp.hbs'
+import galleryTemp from '../tamplates/galleryItems.hbs'
 import refs from './refs.js'
 
 function updateGallery(pics) {
