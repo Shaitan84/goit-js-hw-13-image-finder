@@ -1,3 +1,4 @@
+'use strict'
 import apiService from './api-service.js'
 import refs from './refs.js'
 import render from './render-gallery.js'

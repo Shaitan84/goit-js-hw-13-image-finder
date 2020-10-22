@@ -1,3 +1,4 @@
+'use strict'
 const baseUrl = "https://pixabay.com/api/";
 const apiKey = "18687668-0314872cca099a59b905edaa7";
 export default {
