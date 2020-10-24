@@ -7,7 +7,7 @@ let searchQuery = "";
 let page = 1;
 
 
-refs.searchForm.addEventListener('submit', (event) => {
+refs.searchForm.addEventListener('click', (event) => {
 	event.preventDefault();
 	page = 1;
 	refs.loadMore.style.visibility = "visible";
@@ -38,3 +38,6 @@ refs.loadMore.addEventListener('click', (event) => {
 			page += 1
 		});
 });
+
+
+
